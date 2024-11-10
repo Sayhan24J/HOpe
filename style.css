@@ -1,3 +1,4 @@
+/* Center body content and set background */
 body {
     display: flex;
     justify-content: center;
@@ -5,9 +6,15 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #222;
+    overflow: hidden; /* Prevents scrolling on small screens */
 }
 
+/* Canvas styles */
 canvas {
     border: 2px solid white;
     background-color: #000;
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Max width for larger screens */
+    max-height: 600px;
 }
